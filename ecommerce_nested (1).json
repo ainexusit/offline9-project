@@ -1,0 +1,83 @@
+{
+    "ecommerce": {
+        "orders": [
+            {
+                "order_id": "ORD1001",
+                "customer": {
+                    "customer_id": "CUST01",
+                    "name": "Amit Sharma",
+                    "contact": {
+                        "email": "amit@example.com",
+                        "phones": [
+                            "9876543210",
+                            "9123456780"
+                        ]
+                    },
+                    "address": {
+                        "country": "India",
+                        "state": "Maharashtra",
+                        "city": "Pune",
+                        "pin": "411001"
+                    }
+                },
+                "items": [
+                    {
+                        "item_id": "ITM101",
+                        "category": "Electronics",
+                        "subcategory": "Mobile",
+                        "brand": "Samsung",
+                        "price": 15000,
+                        "quantity": 1,
+                        "discounts": [
+                            {
+                                "type": "festival",
+                                "amount": 500
+                            },
+                            {
+                                "type": "coupon",
+                                "amount": 200
+                            }
+                        ]
+                    },
+                    {
+                        "item_id": "ITM202",
+                        "category": "Home Appliances",
+                        "subcategory": "Mixer",
+                        "brand": "Philips",
+                        "price": 3500,
+                        "quantity": 1,
+                        "discounts": []
+                    }
+                ],
+                "payment": {
+                    "method": "UPI",
+                    "transaction_id": "TXN778899",
+                    "status": "Success"
+                },
+                "delivery": {
+                    "status": "Delivered",
+                    "expected_date": "2024-12-05",
+                    "delivered_on": "2024-12-04",
+                    "partner": {
+                        "name": "Delhivery",
+                        "tracking_id": "DLV1234567",
+                        "updates": [
+                            {
+                                "time": "2024-12-02 10:00",
+                                "status": "Shipped"
+                            },
+                            {
+                                "time": "2024-12-03 18:00",
+                                "status": "Out for delivery"
+                            },
+                            {
+                                "time": "2024-12-04 12:30",
+                                "status": "Delivered"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
